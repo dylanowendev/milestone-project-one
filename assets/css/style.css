@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
+
+/*---------------------------------------------------- Header */
+
+header {
+    margin: 0;
+}
+
+/*---------------------------------------------------- Headings */
+
+
+
+
+
+/*---------------------------------------------------- Hero Image */
+.hero-caption {
+    text-align: center;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-caption > h1 {
+    font-size:500%;
+}
+
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/senna.jpg"); 
+    min-height: 500px;
+    background-position: right;
+    background-color: #000000; 
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+p {
+    font:'Carrois Gothic SC', sans-serif;
+}
+
