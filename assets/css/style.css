@@ -1,36 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Roboto&display=swap');
+/*---------------------------------------------------- Page Overflow */
+html
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
-/*---------------------------------------------------- Header */
+/*---------------------------------------------------- Header / Nav Bar */
 
 header {
-    margin: 0;
-}
-
-/*---------------------------------------------------- Headings */
-
-
-
-
+    width: 100%;
+    background-color: rgb(130, 0, 0);
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    width: 25%; 
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color: white;
+    text-decoration: underline white solid;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      text-align: left;
+      display: block;
+      width: 100%;
+      
+    }
+  }
 
 /*---------------------------------------------------- Hero Image */
-.hero-caption {
-    text-align: center;
-    font-family: 'Carrois Gothic SC', sans-serif;
-    font-weight: 400;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.hero-caption > h1 {
-    font-size:500%;
-}
-
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/senna.jpg"); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/sennahero.jpg"); 
     min-height: 500px;
     background-position: right;
     background-color: #000000; 
@@ -42,7 +57,49 @@ header {
     -webkit-transition: all .5s ease-in-out;
 }
 
+/*---------------------------------------------------- Hero Caption */
+.hero-caption {
+    text-align: center;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-caption > h1 {
+    font-size:500%;
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+.hero-caption > p {
+    font-size: 130%;
+    font-family: 'Roboto', sans-serif;
+}
+
 p {
     font:'Carrois Gothic SC', sans-serif;
 }
 
+/*---------------------------------------------------- Landing Page Text Nested Rows / Columns */
+
+.landing-text {
+    background-color: black;
+}
+
+.left-column {
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    min-height: 150px;
+    width: 400%;
+}
+
+.right-column {
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    min-height: 310px;
+    width: 400%;
+}
