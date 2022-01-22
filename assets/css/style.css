@@ -274,8 +274,58 @@ div.event::after {
 
 /* Images */
 
-.img-history {
+.img-his-leg {
   margin-left: 10px;
+}
+
+/*---------------------------------------------------- Legacy Page -------------------------------------------*/
+
+
+div.legacy-text {
+  padding: 20px 30px;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.leg-text-frame {
+  position: relative;
+  padding: 30px;
+  max-width: 100%;
+}
+
+#legacy-bg {
+  background: black;
+}
+
+.legacy-section {
+  min-height: 750px;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+}
+
+.leg-1 {
+  font-family: 'Carrois Gothic SC', sans-serif;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.leg-2 {
+  font-family: 'Carrois Gothic SC', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.leg-3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.leg-p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }
 
 /*---------------------------------------------------- Media Queries for Responsiveness */
@@ -342,7 +392,7 @@ div.event::after {
   .timeline {
     padding: 0px;
   }
-  
+
 }
 
 @media screen and (max-width: 790px) {
@@ -350,4 +400,13 @@ div.event::after {
     width:250px;
   }
   
+}
+
+/*-------Legacy EMbed-----------------*/
+
+@media screen and (max-width: 700px) {
+  iframe {
+    max-width: 250px;
+  }
+
 }
