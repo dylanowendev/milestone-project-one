@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/e1c6c4f3df.js" crossorigin="anonymous"></script>
     <title>Senna</title>
 </head>
 <body>
     <header>
       <nav class="navbar container-fluid">
-        <a href="#"><span>Home</span></a>  
-        <a href="#"><span>History</span></a> 
+        <a href="index.html"><span>Home</span></a>  
+        <a href="history.html"><span>History</span></a> 
         <a href="#"><span>Legacy</span></a> 
         <a href="#"><span>Mailing List</span></a> 
       </nav>
@@ -28,7 +28,7 @@
         </div>
       </section>
       <section class="landing-text">
-        <div class="row">
+        <div class="row" id="nested">
           <div class="column-left">
             <div class="summary">
               <h1>Summary</h1>
@@ -56,12 +56,19 @@
           </div>
           <div class="column-right">
             <div class='embed-container'>
-              <iframe height="300px" width="100%" src='https://www.youtube.com/embed/d3_FCglY1vk?autoplay=1&mute=1' frameborder="0" allowfullscreen></iframe></div>
+              <iframe title="Senna On-board footage, Monaco" height="250" width=300" src='https://www.youtube.com/embed/d3_FCglY1vk?' frameborder="0" allowfullscreen></iframe></div>
             </div>
         </div>
       </section>
-      <footer>
-
+      <footer class="container-fluid" class="footer-info">
+        <div>
+          <p>This website is an unofficial page where you can learn about Ayrton Senna. Official links can be found below:</p>
+        <ul class="socials">
+          <li><a href="https://www.ayrtonsenna.com.br/en/" target="_blank"> Official Website</a></li>
+          <li><a href="https://www.facebook.com/oficialayrtonsenna/" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+          <li><a href="https://twitter.com/ayrtonsenna?lang=en" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+       </ul>   
+      </div>
       </footer>
 </body>
 </html>

@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Roboto:wght@200&display=swap');
+
 /*---------------------------------------------------- Page Overflow */
-html, section
-{
+
+html, body {
     width: 100%;
-    height: 100%;
+    max-height: 100vh;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
@@ -13,7 +14,6 @@ html, section
 
 header {
     background-color: rgb(130, 0, 0);
-    overflow: hidden;
     min-width: 100%;
   }
   
@@ -28,18 +28,8 @@ header {
   }
   
   .navbar a:hover {
-    color: white;
-    text-decoration: underline white solid;
-  }
-  
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      text-align: left;
-      display: block;
-      min-width: 100%;
-      
-    }
+    color: green;
+    text-decoration: underline green solid;
   }
 
 /*---------------------------------------------------- Hero Image */
@@ -57,6 +47,7 @@ header {
 }
 
 /*---------------------------------------------------- Hero Caption */
+
 .hero-caption {
     text-align: center;
     font-weight: 400;
@@ -78,69 +69,67 @@ header {
     font-family: 'Roboto', sans-serif;
 }
 
-p {
-    font:'Carrois Gothic SC', sans-serif;
-}
+/*---------------------------------------------------- Main Content and Video Formatting */
 
-/*---------------------------------------------------- Landing Page Quotes and Video Formatting */
-
-.row {
+#nested {
   background-color: black;
   min-width: 100%;
-  overflow: hidden;
-  min-height: 500px;
-  padding-top: 30px;
+  margin-top:0px;
 }
 
 .summary {
-  border: 2px solid rgb(140, 0, 0);
-  background-color: rgba(130, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  padding:  10px;
-  margin: 30px;
+  padding:10px 10px 5px 10px;
+  margin: 10px 30px 30px 30px;
   min-width: 100%;
-  min-height: 294px;
-
+  min-height: 275px;
+  font-size: smaller;
+  font-family: 'Roboto', sans-serif;
 }
 
 .driver-quote {
-  border: 2px solid rgb(140, 0, 0);
-  background-color: rgba(130, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  padding:  10px;
-  margin: 30px;
+  padding:10px 10px 5px 10px;
+  margin: 10px 30px 10px 30px;
   min-width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .video-embed {
-  padding:  10px;
-  margin-top: 15px;
-  margin-left: 30px;
+  padding:10px 10px 5px 10px;
+  margin: 10px 30px 30px 30px;
   min-width: 33%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .summary {
   font-size: smaller;
-  color: white;
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto', sans-serif;
 }
 
 .name {
   font-size: small;
   font-weight: bold;
-  color: white;
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto', sans-serif;
 }
 
 .stats {
   font-size: smaller;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: normal;
+  font-family: 'Roboto', sans-serif;
 }
 
 .quote {
   font-size: smaller;
-  color:white;
+  color:rgb(0, 0, 0);
   font-style: italic;
   margin-left: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .driver-quote img {
@@ -172,24 +161,70 @@ p {
   position: relative;
   padding-bottom: 55%; 
   height: 0; 
-  overflow: hidden; 
   max-width: 100%; 
-  margin: 30px;
   padding-top:50px;
+  padding-right: 0;
+  min-width:300px;
+  margin-top: -40px;
+  margin-left: 60px;
+  min-height: 300px;
 } 
-  
-.embed-container iframe, { 
-  position: relative; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  height: 100%; 
+
+/*---------------------------------------------------- Footer */
+
+footer {
+  background-color: rgb(130, 0, 0);
+  border: solid rgb(130, 0, 0);
+  display: flex;
+  min-height: 140px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  padding-top: 10px;
 }
 
+ul{
+  list-style: none;
+  color: white;
+}
+
+.socials a {
+  padding: 12px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  color: green;
+  text-decoration: underline green solid;
+}
 
 /*---------------------------------------------------- Media Queries for Responsiveness */
 
-/*---Landing Page Columns / Video---*/
+/*---Nav Bar-------------------------*/
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    text-align: left;
+    display: block;
+    min-width: 100%;
+    
+  }
+}
+
+/*---Landing Page Columns / Video-----*/
+
+@media screen and (max-width: 1432px) {
+  .quote{
+    padding-top: 30px;
+  }
 
 @media screen and (max-width: 960px) {
   .column-left {
@@ -219,15 +254,11 @@ p {
   }
   
 }
-  .driver-quote img {
-    min-height: 0px;
-    min-width: 0px;
-  }
 
-  .embed-container { 
-    padding-bottom: 100%; 
-    padding-right: 0;
-    min-width:300px;
-    margin-top: -25px;
-    margin-left: 60px;
-  } 
+/*-------Footer-----------------------*/
+
+@media screen and (max-width: 960px) {
+  footer {
+    min-height: 180px;
+  }
+}
