@@ -2,7 +2,7 @@
 
 /*---------------------------------------------------- Page Overflow --------------------------------------*/
 
-html, body {
+body, html {
     width: 100%;
     max-height: 100vh;
     margin: 0px;
@@ -10,12 +10,12 @@ html, body {
     overflow-x: hidden; 
 }
 
-/*---------------------------------------------------- Header / Nav Bar ----------------------------------*/
+/*---------------------------------------------------- Header / Nav Bar -----------------------------------*/
 
 header {
     background-color: rgb(130, 0, 0);
     min-width: 100%;
-  }
+}
   
   .navbar a {
     float: left;
@@ -25,12 +25,12 @@ header {
     width: 25%; 
     text-align: center;
     text-decoration: none;
-  }
+}
   
   .navbar a:hover {
     color: green;
     text-decoration: underline green solid;
-  }
+}
 
 /*---------------------------------------------------- Hero Image ----------------------------------------*/
 
@@ -46,7 +46,7 @@ header {
     width: 100%;
 }
 
-/*---------------------------------------------------- Hero Caption ------------------------------------*/
+/*---------------------------------------------------- Hero Caption --------------------------------------*/
 
 .hero-caption {
     text-align: center;
@@ -60,7 +60,7 @@ header {
 }
 
 .hero-caption > h1 {
-    font-size:500%;
+    font-size: 500%;
     font-family: 'Carrois Gothic SC', sans-serif;
 }
 
@@ -71,11 +71,15 @@ header {
 
 /*---------------------------------------------------- Main Content and Video Formatting ---------------*/
 
+/* Background Area */
+
 #nested {
   background-color: black;
   min-width: 100%;
-  margin-top:0px;
+  margin-top: 0px;
 }
+
+/* Summary Text Box */
 
 .summary {
   background-color: rgb(255, 255, 255);
@@ -86,7 +90,11 @@ header {
   min-height: 275px;
   font-size: smaller;
   font-family: 'Roboto', sans-serif;
+  font-size: smaller;
+  color: rgb(0, 0, 0);
 }
+
+/* Driver Quotes Text Box */
 
 .driver-quote {
   background-color: rgb(255, 255, 255);
@@ -94,19 +102,6 @@ header {
   padding:10px 10px 5px 10px;
   margin: 10px 30px 10px 30px;
   min-width: 100%;
-  font-family: 'Roboto', sans-serif;
-}
-
-.video-embed {
-  padding:10px 10px 5px 10px;
-  margin: 10px 30px 30px 30px;
-  min-width: 33%;
-  font-family: 'Roboto', sans-serif;
-}
-
-.summary {
-  font-size: smaller;
-  color: rgb(0, 0, 0);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -140,6 +135,21 @@ header {
   width: 60px;
 }
 
+/* Video Box */
+
+.video-embed {
+  padding:10px 10px 5px 10px;
+  margin: 10px 30px 30px 30px;
+  width: 100vh;
+}
+
+.embed-container { 
+  margin-left: 60px;
+  margin-top: 10px;
+} 
+
+/* Column Formatting */
+
 .column-left {
   float: left; 
   width: 33%; 
@@ -157,24 +167,10 @@ header {
   padding: 10px;
 }
 
-.embed-container { 
-  position: relative;
-  padding-bottom: 55%; 
-  height: 0; 
-  max-width: 100%; 
-  padding-top:50px;
-  padding-right: 0;
-  min-width:300px;
-  margin-top: -40px;
-  margin-left: 60px;
-  min-height: 300px;
-} 
-
-/*---------------------------------------------------- Footer--------------------------------------------- */
+/*---------------------------------------------------- Footer -------------------------------------------- */
 
 footer {
   background-color: rgb(130, 0, 0);
-  border: solid rgb(130, 0, 0);
   display: flex;
   min-height: 140px;
   justify-content: center;
@@ -205,15 +201,20 @@ ul{
   text-decoration: underline green solid;
 }
 
-/*---------------------------------------------------- History Page-------------------------------------------*/
+/*---------------------------------------------------- History Page ----------------------------------------*/
 
-/* Timeline (Tutorial used for main format, credit: https://code-boxx.com/simple-pure-css-timeline*/
+/* Timeline (Tutorial used for main format, credit: https://code-boxx.com/simple-pure-css-timeline */
+
+/* Timeline Container */
 
 .vtl {
   position: relative;
   padding: 10px 10px 10px 50px;
   max-width: 600px;
 }
+
+
+/* Actual Line */
 
 .vtl::before {
   content: '';
@@ -225,6 +226,8 @@ ul{
   left: 15px;
 }
 
+/* Historic Event Text Box */
+
 div.event {
   padding: 20px 30px;
   background-color: #ffffff;
@@ -232,6 +235,8 @@ div.event {
   border-radius: 6px;
   margin-bottom: 10px;
 }
+
+/* Year Style */
 
 strong.edate {
   font-size: 1.1em;
@@ -244,6 +249,8 @@ p.etxt {
   color: #222;
 }
 
+/* Text triangle link with timeline */
+
 div.event::before {
   content: '';
   border: 10px solid transparent;
@@ -253,6 +260,8 @@ div.event::before {
   top: 20%;
   left: -10px;
 }
+
+/* Circles on timeline */
 
 div.event::after {
   content: '';
@@ -266,6 +275,7 @@ div.event::after {
   left: -40px;
 }
 
+/* Timeline background */
 .timeline {
   min-height: 750px;
   background-color: rgb(0, 0, 0);
@@ -280,6 +290,7 @@ div.event::after {
 
 /*---------------------------------------------------- Legacy Page -------------------------------------------*/
 
+/* Legacy Text Box */
 
 div.legacy-text {
   padding: 20px 30px;
@@ -295,6 +306,7 @@ div.legacy-text {
   max-width: 100%;
 }
 
+/* Background */
 #legacy-bg {
   background: black;
 }
@@ -305,6 +317,8 @@ div.legacy-text {
   padding: 20px;
 }
 
+
+/* Font Stylings */
 .leg-1 {
   font-family: 'Carrois Gothic SC', sans-serif;
   font-size: 50px;
@@ -328,9 +342,81 @@ div.legacy-text {
   font-size: 15px;
 }
 
+/*---------------------------------------------------- Form on Mailing List Page -------*/
+
+/* Form Structure (Tutorial used for main format, credit: /* Timeline (Tutorial used for main format, credit: https://code-boxx.com/simple-pure-css-timeline */
+
+.form-section {
+  clear: left;
+  background: url("../images/sennaformsignup.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+}
+
+.nl-signup-form {
+  margin-top: 150px;
+  color: #fff;
+  background-color: rgba(60, 60, 60, 0.6);
+  max-width: 400px;
+  position: absolute;
+  left: 10%;
+  padding: 30px;
+}
+
+.nl-signup-form > h2{
+  color: #fafafa;
+  margin-bottom: 20px;
+  
+}
+
+.text-input {
+  background: transparent;
+  color: #fafafa;
+  width: 100%;
+  height: 25px;
+  margin: 5px 0 20px 0;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+}
+
+label > a {
+  padding: 12px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+label > a:hover {
+  color: green;
+  text-decoration: underline green solid;
+}
+
+.text-input:hover{
+  border-color: green;
+}
+
+.join-button {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px 15px 32px;
+  text-align: center;
+  font-size: 100%;
+  background-color: rgb(130, 0, 0);
+  color: #fafafa;
+  display: block;
+}
+
+.join-button:hover {
+  background-color: green;
+  color: #ffd900;
+}
+
 /*---------------------------------------------------- Media Queries for Responsiveness */
 
-/*---Nav Bar-------------------------*/
+/* Nav Bar */
 
 @media screen and (max-width: 500px) {
   .navbar a {
@@ -342,12 +428,13 @@ div.legacy-text {
   }
 }
 
-/*---Landing Page Columns / Video-----*/
+/* Landing Page Columns / Video */
 
 @media screen and (max-width: 1432px) {
-  .quote{
+  .quote {
     padding-top: 30px;
   }
+}
 
 @media screen and (max-width: 960px) {
   .column-left {
@@ -378,7 +465,22 @@ div.legacy-text {
   
 }
 
-/*-------Footer-----------------------*/
+/* Home Screen Video Box */
+
+@media screen and (max-width: 1556px) {
+#onboardEmbed { 
+  width: 80%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  #onboardEmbed { 
+    width: 80%;
+    margin-left: 10%;
+    }
+  }
+
+/* Footer */
 
 @media screen and (max-width: 960px) {
   footer {
@@ -386,7 +488,7 @@ div.legacy-text {
   }
 }
 
-/*-------Timeline---------------------*/
+/* Timeline */
 
 @media screen and (max-width: 600px) {
   .timeline {
@@ -397,16 +499,22 @@ div.legacy-text {
 
 @media screen and (max-width: 790px) {
   .img-history {
-    width:250px;
-  }
-  
-}
-
-/*-------Legacy EMbed-----------------*/
-
-@media screen and (max-width: 700px) {
-  iframe {
     max-width: 250px;
   }
+}
 
+/* Legacy Embed */
+
+@media screen and (max-width: 790px) {
+  #legacyEmbed {
+  max-width: 250px;
+  }
+}
+
+/* Signup Form */
+
+@media screen and (max-width: 450px) {
+.nl-signup-form {
+  width: 70%;
+  }
 }
