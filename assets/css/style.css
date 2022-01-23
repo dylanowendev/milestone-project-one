@@ -146,6 +146,7 @@ header {
 .embed-container { 
   margin-left: 60px;
   margin-top: 10px;
+  padding-bottom: 20%;
 } 
 
 /* Column Formatting */
@@ -344,7 +345,7 @@ div.legacy-text {
 
 /*---------------------------------------------------- Form on Mailing List Page -------*/
 
-/* Form Structure (Tutorial used for main format, credit: /* Timeline (Tutorial used for main format, credit: https://code-boxx.com/simple-pure-css-timeline */
+/* Form Structure (Tutorial used for main format, credit: Code Institute https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSE101+2020_Q2/courseware/be0e510a3aca4bccb6e0bba4cf7cf06b/d533998456514d97a88ce691537e00a6/ */
 
 .form-section {
   clear: left;
@@ -356,7 +357,7 @@ div.legacy-text {
 }
 
 .nl-signup-form {
-  margin-top: 150px;
+  margin-top: 0px;
   color: #fff;
   background-color: rgba(60, 60, 60, 0.6);
   max-width: 400px;
@@ -514,7 +515,35 @@ label > a:hover {
 /* Signup Form */
 
 @media screen and (max-width: 450px) {
-.nl-signup-form {
-  width: 70%;
+
+  .form-section {
+    min-height: 100%;
   }
-}
+  
+  .nl-signup-form {
+    max-width: 300px;
+    max-height: 400px;
+    padding-top: 10px;
+    position: relative;
+  }
+  
+  
+  .nl-signup-form > h2{
+    color: #fafafa;
+    font-size: smaller;
+    
+  }
+  
+  .text-input {
+    color: #fafafa;
+    width: 100%;
+    margin: 5px;
+    height: 15px;
+    font-size: smaller;
+  }
+  
+  label > a {
+    padding: 5px;
+    font-size: smaller;
+  }}
+  
