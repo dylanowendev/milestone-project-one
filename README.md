@@ -81,7 +81,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
     1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about Ayrton Senna.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and "Arton Senna, F1 Driver" caption.
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and "Arton Senna, F1 Driver" caption. See [here]((https://dylanowendev.github.io/milestone-project-one/index.html).
         2. The main points are bolstered with teh adjacent hero image of Ayrton Senna.
         3. The user has two options, to read the text below the hero image or to watch the embedded video to the right.
 
@@ -92,7 +92,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
     3. As a First Time Visitor, I want to look be able to interact with things on the site.
         
-        1. The site features an embedded video on the Index.html and Legacy.html pages. These features will keep the visitors attention and may trigger interest, leading them to read more of the site and associated links.
+        1. The site features an embedded video on the [Index.html](https://dylanowendev.github.io/milestone-project-one/index.html) and [Legacy.html](https://dylanowendev.github.io/milestone-project-one/legacy.html) pages. These features will keep the visitors attention and may trigger interest, leading them to read more of the site and associated links.
 
 -   #### Returning Visitor Goals
 
@@ -103,7 +103,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     2. As a Returning Visitor, I want to know the location of other sites where I can find out more about Ayrton Senna.
 
         1. Links to official social media acounts are included in the footer.
-        2. The Mailing List signup also incorpates links within the labels which will redirect the visitor to the respective brands.
+        2. The [Mailing List signup](https://dylanowendev.github.io/milestone-project-one/mailinglist.html) also incorpates links within the labels which will redirect the visitor to the respective brands.
 
 -   #### Frequent User Goals
 
@@ -114,7 +114,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     2. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any updates in relation to the Senna Brand.
     
        1. The user would already be comfortable with the website layout and can easily navigate to the Mailing List tab to sign up.
-       2. The sign-up form is a simple design, with a large 'SUBMIT' button.
+       2. The [sign-up form](https://dylanowendev.github.io/milestone-project-one/mailinglist.html) is a simple design, with a large 'SUBMIT' button.
 
 ### Further Testing
 
