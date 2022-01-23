@@ -1,108 +1,201 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">Ayrton Website</h1>
 
-Welcome USER_NAME,
+[View the live project here.](https://codeinstitute.net)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This is a mock up of a hypothetical fan page for the Formula One driver, Ayrton Senna.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+<h2 align="center"><img src="https://whimsical.com/4sRMwmoYbcydHQFScCYnkW@2Ux7TurymN84zCYvgt31"></h2>
 
-## Gitpod Reminders
+## User Experience (UX)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+-   ### User stories
 
-`python3 -m http.server`
+    -   #### First Time Visitor Goals
 
-A blue button should appear to click: _Make Public_,
+        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about Ayrton Senna.
+        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
+        3. As a First Time Visitor, I want to look be able to interact with things on the site.
 
-Another blue button should appear to click: _Open Browser_.
+    -   #### Returning Visitor Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+        1. As a Returning Visitor, I want to be able to interact with new things on the website.
+        2. As a Returning Visitor, I want to know the location of other sites where I can find out more about Ayrton Senna.
 
-A blue button should appear to click: _Make Public_,
+    -   #### Frequent User Goals
+        1. As a Frequent User, I want to check to see if there are any newly added posts or tabs. 
+        2. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any updates in relation to the Senna Brand.
 
-Another blue button should appear to click: _Open Browser_.
+-   ### Design
+    -   #### Colour Scheme
+        -   The two main colours used are Red for foreground text boxes, and black for the background to provide contrast. Greens were also to represent the colours in Senna's race helmet (green, red, yellow).
+    -   #### Typography
+        -   The font used for the largest headings (on landing page, h1s through doc) is 'Carrois Gothic SC'. Roboto is used for smaller headings (h3 etc), wit Sans Serif as the fallback font in case for any reason either font isn't being imported into the site correctly. 
+    -   #### Imagery
+        - The large, hero image on the landing page is designed to catch the readers attention. The colour palette was altered to give the image a more muted tone so the image would blend better with the black background, appearing more subtle.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+*   ### Wireframes
 
-To log into the Heroku toolbelt CLI:
+    -   Home Page Wireframe - [View](https://whimsical.com/4sRMwmoYbcydHQFScCYnkW@2Ux7TurymN84zCYvgt31)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    -   History / Legacy Wireframe - [View](https://whimsical.com/history-legacy-DVBZVbfBHkBBvcd7ycz44o)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+    -   Mailing list Wireframe - [View](https://whimsical.com/signup-form-WX4KE8WnfXbDW5jnfGHCe5)
 
-------
+## Features
 
-## Release History
+-   Responsive on all device sizes
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+-   Interactive elements such as sign-up form
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Technologies Used
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Languages Used
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Frameworks, Libraries & Programs Used
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+    - Bootstrap was used to assist with the responsiveness and styling of the website.
+1. [Hover.css:](https://ianlunn.github.io/Hover/)
+    - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+1. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+1. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Testing
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/dylanowendev/my-full-template/blob/main/index.html)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/dylanowendev/my-full-template/blob/main/assets/css/style.css)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Testing User Stories from User Experience (UX) Section
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+-   #### First Time Visitor Goals
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about Ayrton Senna.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and "Arton Senna, F1 Driver" caption.
+        2. The main points are bolstered with teh adjacent hero image of Ayrton Senna.
+        3. The user has two options, to read the text below the hero image or to watch the embedded video to the right.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+    2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+        1. The site features a simple navigation bar that provides easy navigation between each page. Simple page names are used.
+        2. At the bottom of the page there is a footer with social media links. These are presented in a simple manner.
 
-------
+    3. As a First Time Visitor, I want to look be able to interact with things on the site.
+        
+        1. The site features an embedded video on the Index.html and Legacy.html pages. These features will keep the visitors attention and may trigger interest, leading them to read more of the site and associated links.
 
-## FAQ about the uptime script
+-   #### Returning Visitor Goals
 
-**Why have you added this script?**
+    1. As a Returning Visitor, I want to be able to interact with new things on the website.
+      
+        1. Although there is no functionality at the moment, future version could incorporate a message forum for fans to discuss Senna and associated topics.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+    2. As a Returning Visitor, I want to know the location of other sites where I can find out more about Ayrton Senna.
 
-**How will this affect me?**
+        1. Links to official social media acounts are included in the footer.
+        2. The Mailing List signup also incorpates links within the labels which will redirect the visitor to the respective brands.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+-   #### Frequent User Goals
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+    1. As a Frequent User, I want to check to see if there are any newly added posts or tabs. 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+       1. The user would already be comforatble with the website layout and can easily click the banner message.
+        
+    2. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any updates in relation to the Senna Brand.
+    
+       1. The user would already be comfortable with the website layout and can easily navigate to the Mailing List tab to sign up.
+       2. The sign-up form is a simple design, with a large 'SUBMIT' button.
 
-**So….?**
+### Further Testing
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+-   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+-   A large amount of testing was done to ensure that all pages were linking correctly.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
-**Can I opt out?**
+### Known Bugs
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+-   TBC
+
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
 
-**Anything more?**
+7. Press Enter. Your local clone will be created.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
 
----
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
-Happy coding!
+## Credits
+
+### Code
+
+-   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used in the project mainly to make site responsive (container-fluid).
+
+- Tutorial used for signup form format, [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSE101+2020_Q2/courseware/be0e510a3aca4bccb6e0bba4cf7cf06b/d533998456514d97a88ce691537e00a6/)
+
+- Tutorial used for timeline format, [Code Boxx](https://code-boxx.com/simple-pure-css-timeline )
+
+### Content
+
+-   Homepage text was obtained from [MOTORLAT website](https://www.motorlat.com/notas/f1/13664/senna-039-s-tribute-25-quotes-from-25-people-associated-with-f1)
+-   Timeline text was obtained from [McClaren Website](https://www.mclaren.com/racing/heritage/driver/ayrton-senna/10-defining-moments/)
+-   Legacy text was obtained from [The Senna Institute](https://institutoayrtonsenna.org.br/en/about-us.html)
+
+### Media
+
+-   [hamiltonavatar](https://images.app.goo.gl/KtQysquiYxM8fgxz6)
+-   [schumacheravatar](https://images.app.goo.gl/g9c2CGVNbqyUeLqf7)
+-   [sennahero](https://images.app.goo.gl/8nh7wiMQ32BHh2ZS9)
+-   [sennaformsignup.jpg](https://images.app.goo.gl/ZfM3NAw7fhJC4B93A)
+-   ['sennahistoryX' images](https://www.mclaren.com/racing/heritage/driver/ayrton-senna/10-defining-moments/)
